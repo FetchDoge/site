@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AEGIS — Technical Specifications Vol. I — Marcus Richards</title>
+<meta name="description" content="AEGIS: a local-first agent operating system for AI coding work. Receipt-backed token ledger, honest-yield rule, frozen /v1 API. v1.2.0, public on GitHub.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="site-nav" id="nav">
+  <div class="nav-inner">
+    <a class="wordmark" href="index.html"><span class="dot"></span>MARCUS&nbsp;RICHARDS</a>
+    <div class="nav-links">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#aegis">AEGIS</a>
+      <a href="index.html#method">Method</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <p class="kicker">Project · Memory Utility Labs · No. II</p>
+    <h1>AEGIS</h1>
+    <p class="lede">A local-first agent operating system for AI coding work. Tokens are finite inventory: pack once, reuse while bytes are unchanged, land the result, ledger everything. If it is not in the ledger, it did not happen.</p>
+  </div>
+</header>
+
+<main class="page-body">
+  <div class="wrap">
+
+    <h2>What it does</h2>
+    <p>AEGIS meters the token supply chain of AI-assisted development. A kernel tracks process, memory, and tool calls; a portable data plane holds the ledger, content-addressed context packs, and outputs; a frozen <strong>/v1</strong> API keeps the contract stable while the implementation moves. A multi-model router, a daemon, and a menu-bar app round out the working surface.</p>
+
+    <h2>The honest-yield rule</h2>
+    <p>Efficiency claims are the easiest thing in this field to fake, so AEGIS refuses to make them casually: a savings claim stays null until an admitted pair of runs proves it. No admitted pair, no percentage. The rule is the feature.</p>
+
+    <h2>Protective reserve</h2>
+    <p>The doctrine holds a protective reserve floor of at least 80% under a weekly token budget — austere by design, aggressive on drift. The reserve is what keeps a long session honest.</p>
+
+    <h2>Status</h2>
+    <p><strong>v1.2.0</strong>, released 2026-09-27. Public on GitHub at <a href="https://github.com/marsojuji-cmyk/aegis">github.com/marsojuji-cmyk/aegis</a>. Published under the <a href="labs.html">Memory Utility Labs</a> imprint; the publication of record is <em>Introducing AEGIS</em>, Technical Specifications Vol. I (2026).</p>
+    <div class="panel">
+      <p><strong>What is not claimed:</strong> adoption, users, yield percentages, or benchmark outcomes. The 30-day existence proof for the honest-yield pair is in progress; until it lands, there is no number here.</p>
+    </div>
+
+    <h2>Publications</h2>
+    <div class="pubs">
+      <article class="pub-card">
+        <img src="assets/publications/vol2-cover.jpg" alt="Cover of Introducing AEGIS Volume II — drafting-plate geodesic sphere">
+        <div class="pub-meta">
+          <p class="pub-series">Introducing AEGIS · Vol. II · System Architecture · Issue 1 · 2026</p>
+          <h3>The system architecture</h3>
+          <p>Control plane — kernel, process, frozen /v1. Token capacity basin. Guard middleware: allow, deny, require-review. Hermes routing: tiny-chat on, implement-pack routing off. Sixteen pages, set in Helvetica and Menlo.</p>
+          <p class="pub-specs">16 pp · PDF · 2.6 MB</p>
+          <a class="btn btn-ghost" href="assets/publications/Introducing-AEGIS-Vol-II.pdf" download>Download PDF</a>
+        </div>
+      </article>
+    </div>
+
+    <p><a class="work-link" href="https://github.com/marsojuji-cmyk/aegis/releases/tag/v1.2.0">Read the v1.2.0 release notes →</a></p>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="f-col">
+        <h4>Portfolio</h4>
+        <a href="index.html#work">Selected work</a>
+        <a href="index.html#method">Method</a>
+        <a href="index.html#evidence">The record</a>
+      </div>
+      <div class="f-col">
+        <h4>Volumes</h4>
+        <a href="aegis.html">AEGIS — Technical Specifications</a>
+        <a href="labs.html">Memory Utility Labs</a>
+        <a href="ektar.html">The Ektar Standard</a>
+      </div>
+      <div class="f-col">
+        <h4>Elsewhere</h4>
+        <a href="https://github.com/marsojuji-cmyk">GitHub</a>
+        <a href="https://www.linkedin.com/in/marcus-richards-32075a422">LinkedIn</a>
+        <a href="mailto:marcus@marcusrichards.dev">marcus@marcusrichards.dev</a>
+      </div>
+    </div>
+    <div class="colophon">
+      <span>Golden Gate Book · Portfolio Vol. I</span>
+      <span>Set in Helvetica and Menlo · MMXXVI</span>
+      <span>© <span id="yr">2026</span> Marcus Richards</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav = document.getElementById('nav');
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 40); }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  document.getElementById('yr').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

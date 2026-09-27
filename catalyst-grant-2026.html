@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interlock — Catalyst Grant 2026 Application — Marcus Richards</title>
+<meta name="description" content="Catalyst Grant 2026 application: Interlock, a zero-dependency safety substrate for agentic AI, by Marcus Richards.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .grant-meta { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; margin:2rem 0; }
+  .grant-meta div { border:1px solid rgba(255,255,255,.12); border-radius:8px; padding:.9rem 1.1rem; }
+  .grant-meta dt { font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; opacity:.6; margin-bottom:.3rem; }
+  .grant-meta dd { margin:0; font-weight:500; }
+  .grant-body h2 { margin-top:2.6rem; }
+  .grant-body h2 .n { font-family:"IBM Plex Mono",monospace; font-size:.8em; opacity:.55; margin-right:.6rem; }
+  @media print { .site-nav,.site-footer,.grain{display:none} body{background:#fff;color:#111} }
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="site-nav" id="nav">
+  <div class="nav-inner">
+    <a class="wordmark" href="index.html"><span class="dot"></span>MARCUS&nbsp;RICHARDS</a>
+    <div class="nav-links">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <p class="kicker">Catalyst Grant 2026 · Agentic Workflows You Can Trust · Application Document</p>
+    <h1>Interlock</h1>
+    <p class="lede">A zero-dependency safety substrate for agentic AI: expiring authority leases, a global e-stop, a fault bus, and provenance-stamped claims — so institutions can trust agents with real research workflows.</p>
+  </div>
+</header>
+
+<main class="page-body grant-body">
+  <div class="wrap">
+
+    <dl class="grant-meta">
+      <div><dt>Applicant</dt><dd>Marcus Richards (individual)<br>Calgary, Alberta, Canada<br>contact@marcusrichards.dev</dd></div>
+      <div><dt>Project</dt><dd><a href="https://github.com/marsojuji-cmyk/interlock">github.com/marsojuji-cmyk/interlock</a><br>MIT-licensed · v0.1.0 · CI green</dd></div>
+      <div><dt>Grant</dt><dd>Digital Science Catalyst Grant 2026<br>Theme: Agentic Workflows You Can Trust</dd></div>
+    </dl>
+
+    <h2><span class="n">1</span>THE PROBLEM</h2>
+    <p>Institutions — universities, publishers, funders, labs — want AI agents working inside real research workflows: evidence synthesis, manuscript screening, reviewer matching, data processing. Today they face a binary choice: keep agents away from anything consequential, or deploy them with guardrails that were never designed for agency — prompt-level instructions ("do not do X"), post-hoc log review, content filters. Prompt instructions fail silently; logs are reviewed after the damage. The result is automation value left on the table (reviewer hours, editorial time, synthesis labor) on one side, and unquantified tail risk on the other: an unaudited agent action against live data, a compliance breach, an erroneous step in a publication pipeline. This decision — can we trust an agent with this workflow? — comes up with every agentic deployment an institution considers, weekly across a sector that runs thousands of such decisions a year.</p>
+
+    <h2><span class="n">2</span>YOUR WORKFLOW</h2>
+    <p>Interlock is a zero-dependency Python substrate that sits between the agent loop and its tools — not a separate application, a layer the agent runs through. Step by step: (1) The operator issues authority leases — scoped, expiring grants naming exactly which tools the agent may call, with which arguments, for how long. (2) The agent plans and requests tool calls as normal. (3) Interlock checks every call against the live lease: in-scope and unexpired, it executes; anything else is denied, and the denial is logged. (4) Every executed action emits a provenance-stamped claim — its authorizing lease, provenance, timestamp, review date, and falsifier. (5) A fault bus aggregates anomalies — repeated denials, lease expirations, unexpected patterns — and can trip a global e-stop that freezes all agent action instantly. (6) A person reviews the claim ledger, renews or narrows leases, and releases the e-stop. Autonomous steps: tool execution inside a valid lease. Human steps: lease issuance, e-stop release, claim review. It wraps the tool-call boundary of any Python agent loop — the team's existing runtime, not a new platform. Today it is used by its solo developer; it is designed to embed in institutional agent deployments.</p>
+
+    <h2><span class="n">3</span>TRUST, AUDIT AND GOVERNANCE</h2>
+    <p>A user sees what the agent did by reading the claim ledger: every action recorded with its authorizing lease, timestamp, and outcome — no reconstruction from scattered logs. Provenance is stamped at execution time: each claim states what produced it, under what authority, when it was valid, and what would prove it wrong. When the agent is uncertain or wrong, the failure mode is denial, not improvisation: an out-of-lease call is refused and logged; escalating anomalies trip the e-stop. Accountability is structural: every claim names the lease issuer — authority is always attributable to a person, never diffused into "the agent decided." We also test where it breaks: denial-path tests cover expired leases, engaged e-stop, and fault-gated resources, so refusal is exercised in CI rather than asserted.</p>
+
+    <h2><span class="n">4</span>TEAM</h2>
+    <p>Solo founder: Marcus Richards, AI Systems Operator &amp; Automation Architect, Calgary, Canada. He builds local-first infrastructure for AI agents — eleven public repositories, including Interlock v0.1.0 and AEGIS v1.2.0 (both tagged releases with green CI, both MIT-licensed). He picked this problem because it is the blocker he kept hitting: agents are easy to demo and hard to trust, and the missing piece is authority with receipts, not smarter prompts. Domain expertise: bounded authority design, receipt-backed automation, claim-tiered evidence. Advisors: none.</p>
+
+    <h2><span class="n">5</span>WHERE YOU ARE TODAY</h2>
+    <p>Stage: working product, early. What exists: Interlock v0.1.0 — MIT-licensed, public on GitHub, tagged release with changelog, CI green. Links: <a href="https://github.com/marsojuji-cmyk/interlock">github.com/marsojuji-cmyk/interlock</a> and <a href="https://marcusrichards.dev">marcusrichards.dev</a>. Testing so far: continuous-integration suite green on release, including denial-path tests (expired leases, e-stop engagement, fault gating). Users: none yet — the project was published in September 2026 and is new and undiscovered, which is stated plainly rather than dressed up.</p>
+
+    <h2><span class="n">6</span>ALTERNATIVES AND COMPETITORS</h2>
+    <p>How it is solved today: prompt-level instructions, output validators, post-hoc log review — or the null option, keeping agents out of consequential workflows entirely. Who else is working on it: the space is active. Microsoft's Agent Governance Toolkit (policy-as-code; <a href="https://github.com/microsoft/agent-governance-toolkit">github.com/microsoft/agent-governance-toolkit</a>), Guardrails AI (output validation; <a href="https://github.com/guardrails-ai/guardrails">github.com/guardrails-ai/guardrails</a>), NVIDIA NeMo Guardrails (programmable conversation rails; <a href="https://github.com/NVIDIA/NeMo-Guardrails">github.com/NVIDIA/NeMo-Guardrails</a>), OpenAI's AgentKit guardrails and Agents SDK guardrail hooks, and pre-action authorization plugins such as APort's. How we are different: most of these are framework-specific, content-focused (what the model says), or policy layers bolted beside the agent. Interlock is a zero-dependency substrate at the tool boundary — expiring authority leases, a global e-stop, a fault bus, and provenance-stamped claims — framework-agnostic, with accountability naming a human lease issuer rather than just filtering content.</p>
+
+    <h2><span class="n">7</span>WHERE THIS GOES</h2>
+    <p>Vision: the trust substrate institutional agent deployments run on — the seatbelts for research agents, expected infrastructure rather than a differentiator. Commercial thinking: open core (the MIT substrate stays open) plus an institutional tier — managed policy packs, audit dashboards, support — sold as an annual per-deployment license to institutions, publishers, and funders running agentic workflows.</p>
+
+    <h2><span class="n">8</span>FIT WITH DIGITAL SCIENCE</h2>
+    <p>Lifecycle position: research integrity and publication workflows — auditable manuscript screening, citation and figure provenance verification, multi-step editorial workflow agents with full audit trails — plus enterprise research workflows in the form of governed evidence-synthesis agents. Audience: institutions, publishers, and funders. Why work with Digital Science: you sit at the center of the research ecosystem, with researcher and publisher brands across the workflow. A trust substrate proves itself inside real institutional pipelines — a pilot with an editorial agent workflow would be the ideal crucible — and your team's research-software experience is exactly the feedback an early substrate needs.</p>
+
+    <h2><span class="n">9</span>BUDGET</h2>
+    <ul>
+      <li><strong>£6,000</strong> — Independent adversarial audit: third-party probing of lease enforcement, e-stop reliability, and denial behavior, published as evidence.</li>
+      <li><strong>£8,000</strong> — Two pilot integrations: prototype adapters embedding Interlock in manuscript-screening and evidence-synthesis agent loops.</li>
+      <li><strong>£4,000</strong> — Conformance test suite and documentation.</li>
+      <li><strong>£2,000</strong> — Evaluation compute.</li>
+      <li><strong>£5,000</strong> — Dissemination and travel: present results, gather institutional feedback.</li>
+    </ul>
+    <p>Total: <strong>£25,000</strong>. This funds the independent audit and the pilots — what turns a working substrate into institution-ready evidence.</p>
+
+    <div class="panel" style="margin-top:3rem">
+      <p><strong>Document record:</strong> prepared 2026-09-27 by Marcus Richards for the Digital Science Catalyst Grant 2026. Word count: 1,001 (limit 1,500). Budget section: 74 words (limit 75). All technical claims verified against the live Interlock repository on 2026-09-27.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="colophon">Marcus Richards · Calgary, Alberta · <a href="mailto:contact@marcusrichards.dev">contact@marcusrichards.dev</a></p>
+  </div>
+</footer>
+</body>
+</html>

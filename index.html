@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marcus Richards — AI Systems Operator &amp; Automation Architect</title>
+<meta name="description" content="The portfolio of Marcus Richards: AI systems that are safe, economical, and auditable on ordinary hardware. Interlock, AEGIS, Reclamation Evidence Ledger, Star Lab, Sovereign Contracts, Hermes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="site-nav" id="nav">
+  <div class="nav-inner">
+    <a class="wordmark" href="#top"><span class="dot"></span>MARCUS&nbsp;RICHARDS</a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#aegis">AEGIS</a>
+      <a href="#method">Method</a>
+      <a href="#evidence">Record</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-bg" role="img" aria-label="Iridescent sphere of hexagonal cells, each holding a small network diagram, on a dark starfield"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-inner">
+    <p class="kicker reveal in">A Memory Utility Publication · Portfolio Vol. I</p>
+    <h1 class="reveal in">Marcus <em>Richards</em></h1>
+    <p class="role reveal in">AI Systems Operator &amp; Automation Architect — Calgary, Alberta</p>
+    <p class="thesis reveal in">I build AI systems that are <strong>safe, economical, and auditable</strong> on ordinary hardware. Every project below ships with its evidence attached — what is proven, what is in progress, and what is not claimed.</p>
+    <div class="hero-ctas reveal in">
+      <a class="btn btn-solid" href="#work">Survey the work</a>
+      <a class="btn btn-ghost" href="#aegis">Read the AEGIS volume</a>
+    </div>
+  </div>
+  <div class="hero-colophon bl">Golden Gate Book</div>
+  <div class="hero-colophon br">Issue 1 · MMXXVI</div>
+  <div class="scroll-cue" aria-hidden="true"></div>
+</header>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Bounded authority</span><span>Receipt-backed automation</span><span>Local-first systems</span><span>Provenance over promises</span><span>Honest yield</span><span>Evidence-led engineering</span>
+    <span>Bounded authority</span><span>Receipt-backed automation</span><span>Local-first systems</span><span>Provenance over promises</span><span>Honest yield</span><span>Evidence-led engineering</span>
+  </div>
+</div>
+
+<!-- ============ I. THESIS ============ -->
+<section class="chapter" id="thesis">
+  <div class="wrap">
+    <div class="chapter-head reveal">
+      <span class="chapter-no">Chapter I — The thesis</span>
+      <h2>Agents you can <em>hold to account.</em></h2>
+      <p class="lede">Autonomous systems fail in three predictable ways: they exceed their authority, they burn budget nobody measured, and nobody can reconstruct what they did. My work attacks all three — with runtime controls, token governance, and ledgers that stamp every claim with its provenance.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar reveal">
+        <span class="n">Pillar 01</span>
+        <h3>Safe</h3>
+        <p>Bounded authority at runtime: leases that expire, an e-stop that actually stops, a fault bus that records. Interlock and Hermes treat an agent's power as a loan, not a possession.</p>
+      </div>
+      <div class="pillar reveal d1">
+        <span class="n">Pillar 02</span>
+        <h3>Economical</h3>
+        <p>Tokens are finite inventory. AEGIS packs context once, reuses it while the bytes are unchanged, and holds a protective reserve floor — with an honest-yield rule that keeps savings claims null until an admitted pair of runs proves them.</p>
+      </div>
+      <div class="pillar reveal d2">
+        <span class="n">Pillar 03</span>
+        <h3>Auditable</h3>
+        <p>Every consequential claim carries its status — verified, inferred, guessed, unknown. Ledgers, receipts, and evidence packets make the work reconstructible by someone who was never in the room.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ II. SELECTED WORK ============ -->
+<section class="chapter" id="work">
+  <div class="wrap">
+    <div class="chapter-head reveal">
+      <span class="chapter-no">Chapter II — Selected work</span>
+      <h2>Six instruments, <em>one doctrine.</em></h2>
+      <p class="lede">Each project is a working answer to the thesis. Each plate below pairs the system with its image — the imagery is drawn from the work itself: leases and stops, ledgers and reserves, orbits surveyed from above.</p>
+    </div>
+
+    <!-- I. INTERLOCK -->
+    <article class="work-feature reveal">
+      <figure class="plate">
+        <img src="assets/work-interlock.jpg" alt="Brass and steel rings interlocked, an hourglass of teal sand, a crimson stop disc, joined by magenta network lines" loading="lazy">
+        <figcaption><span>Plate I</span><span>Leases · E-stop · Fault bus</span></figcaption>
+      </figure>
+      <div class="work-copy">
+        <span class="work-idx">No. I</span>
+        <h3>Interlock</h3>
+        <p class="tagline">Agent safety substrate</p>
+        <p>A Python runtime substrate that makes agent authority <strong>bounded by construction</strong>. Leases expire. The e-stop halts. The fault bus records what happened and who held the lease when it did. Claims, not vibes.</p>
+        <p class="proves">What it proves: safety can be a runtime property, not a policy document.</p>
+        <div class="meta-chips">
+          <span class="chip hot">v0.1.0 released</span><span class="chip">MIT</span><span class="chip hot">CI green</span>
+        </div>
+        <a class="work-link" href="https://github.com/marsojuji-cmyk/interlock">Inspect the repository →</a>
+      </div>
+    </article>
+
+    <!-- II. AEGIS -->
+    <article class="work-feature flip reveal">
+      <figure class="plate">
+        <img src="assets/work-aegis.jpg" alt="An open ledger book stamped with teal and magenta receipt seals, streams of glowing tokens flowing in beneath a protective amber dome" loading="lazy">
+        <figcaption><span>Plate II</span><span>Tokens · Ledger · Reserve</span></figcaption>
+      </figure>
+      <div class="work-copy">
+        <span class="work-idx">No. II</span>
+        <h3>AEGIS</h3>
+        <p class="tagline">Agent operating system for AI coding work</p>
+        <p>Token governance for long coding sessions: <strong>pack once, reuse while the bytes are unchanged, land, ledger</strong>. A protective reserve floor of ≥80% under a weekly budget keeps sessions honest, and the honest-yield rule refuses to print a savings percentage until an admitted pair of runs earns it.</p>
+        <p class="proves">What it proves: economy can be engineered — and measured without lying.</p>
+        <div class="meta-chips">
+          <span class="chip hot">v1.2.0 released</span><span class="chip">MIT</span><span class="chip warn">Honest-yield proof in progress</span>
+        </div>
+        <a class="work-link" href="aegis.html">Read the volume →</a>
+      </div>
+    </article>
+
+    <!-- III. RECLAMATION -->
+    <article class="work-feature reveal">
+      <figure class="plate">
+        <img src="assets/work-reclamation.jpg" alt="Night satellite view of a farmland grid with teal change-detection polygons and magenta markers on surveyed parcels" loading="lazy">
+        <figcaption><span>Plate III</span><span>Sentinel-2 · 10 m · ~5-day revisit</span></figcaption>
+      </figure>
+      <div class="work-copy">
+        <span class="work-idx">No. III</span>
+        <h3>Reclamation Evidence Ledger</h3>
+        <p class="tagline">Environmental accountability, from orbit</p>
+        <p>Sentinel-2 change detection over Alberta's orphan-well reclamation sites — <strong>provenance-stamped evidence packets</strong> that say what changed, where, and how the claim was derived. A 27-site pilot against 21,892 provincial records, geocoded to ±300 m.</p>
+        <p class="proves">What it proves: public satellite data can hold remediation to account.</p>
+        <div class="meta-chips">
+          <span class="chip hot">27-site pilot</span><span class="chip">MIT</span><span class="chip warn">Live dashboard pending</span>
+        </div>
+        <a class="work-link" href="https://github.com/marsojuji-cmyk/reclamation-evidence-ledger">Inspect the repository →</a>
+      </div>
+    </article>
+
+    <!-- IV. STAR LAB -->
+    <article class="work-feature flip reveal">
+      <figure class="plate">
+        <img src="assets/work-starlab.jpg" alt="A night laboratory bench with glowing orbital module holograms linked by threads of teal and magenta light" loading="lazy">
+        <figcaption><span>Plate IV</span><span>Local-first · Agent research</span></figcaption>
+      </figure>
+      <div class="work-copy">
+        <span class="work-idx">No. IV</span>
+        <h3>Star Lab</h3>
+        <p class="tagline">A free local agent research lab</p>
+        <p>Commissioned and directed by me, built with Grok: a <strong>local-first laboratory</strong> for running agent experiments on ordinary hardware — no cloud bill, no data leaving the bench. The workshop where doctrines get tested before they get published.</p>
+        <p class="proves">What it proves: serious agent research doesn't require serious infrastructure.</p>
+        <div class="meta-chips">
+          <span class="chip">MIT</span><span class="chip hot">CI green</span><span class="chip">Local-first</span>
+        </div>
+        <a class="work-link" href="https://github.com/marsojuji-cmyk/star-lab">Inspect the repository →</a>
+      </div>
+    </article>
+
+    <!-- V. SOVEREIGN CONTRACTS -->
+    <article class="work-feature reveal">
+      <figure class="plate">
+        <img src="assets/work-sovereign.jpg" alt="A vault door drawn as cream architectural blueprint linework, overlaid with teal circuit traces and magenta seal stamps" loading="lazy">
+        <figcaption><span>Plate V</span><span>Auditable · Local-first</span></figcaption>
+      </figure>
+      <div class="work-copy">
+        <span class="work-idx">No. V</span>
+        <h3>Sovereign Contracts</h3>
+        <p class="tagline">Smart contracts, auditable by design</p>
+        <p>A <strong>local-first pipeline for sovereign contract work</strong> — every stage inspectable, every artifact reproducible, nothing hidden behind a hosted black box. Built for contexts where the contract is the relationship and the audit trail is the product.</p>
+        <p class="proves">What it proves: on-chain work can carry its own evidence.</p>
+        <div class="meta-chips">
+          <span class="chip">MIT</span><span class="chip">Local-first</span>
+        </div>
+        <a class="work-link" href="https://github.com/marsojuji-cmyk/sovereign-contracts">Inspect the repository →</a>
+      </div>
+    </article>
+
+    <!-- VI. HERMES -->
+    <article class="work-feature flip reveal">
+      <figure class="plate">
+        <img src="assets/work-hermes.jpg" alt="A dark stone gateway with a glowing teal arch; one beam of magenta light passes a narrow gate while others dissolve" loading="lazy">
+        <figcaption><span>Plate VI</span><span>Allowlist · Design stage</span></figcaption>
+      </figure>
+      <div class="work-copy">
+        <span class="work-idx">No. VI</span>
+        <h3>Hermes</h3>
+        <p class="tagline">Controlled execution for macOS agents</p>
+        <p>An <strong>architecture for bounded agent execution</strong> on the Mac: allowlists decide what may run, gates decide when, receipts record what did. Currently at the architecture and design stage — the drawings are honest about being drawings.</p>
+        <p class="proves">What it will prove: the desktop agent can be governed like infrastructure.</p>
+        <div class="meta-chips">
+          <span class="chip">Apache-2.0</span><span class="chip warn">Design stage</span>
+        </div>
+        <a class="work-link" href="https://github.com/marsojuji-cmyk/hermes-refuse">Inspect the repository →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ AEGIS BAND ============ -->
+<section class="band" id="aegis">
+  <div class="band-bg" style="background-image:url('assets/work-aegis.jpg')" role="img" aria-label="Token streams flowing into a sealed ledger beneath a protective dome"></div>
+  <div class="band-scrim"></div>
+  <div class="chapter">
+    <div class="wrap">
+      <div class="chapter-head reveal">
+        <span class="chapter-no">Interlude — The AEGIS volume</span>
+        <p class="pull">“A savings claim stays <em>null</em> until an admitted pair of runs proves it. <em>No admitted pair, no percentage.</em> The rule is the feature.”</p>
+      </div>
+      <div class="doctrine">
+        <div class="reveal">
+          <span class="n">Doctrine 01</span>
+          <p><strong>Pack once, reuse while the bytes are unchanged.</strong> Context is inventory; inventory gets counted.</p>
+        </div>
+        <div class="reveal d1">
+          <span class="n">Doctrine 02</span>
+          <p><strong>Protective reserve floor of ≥80%</strong> under a weekly token budget — austere by design, aggressive on drift.</p>
+        </div>
+        <div class="reveal d2">
+          <span class="n">Doctrine 03</span>
+          <p><strong>Land every change to the ledger.</strong> The 30-day existence proof for the first honest-yield pair is in progress; until it lands, there is no number here.</p>
+        </div>
+      </div>
+      <div class="hero-ctas reveal" style="margin-top:44px">
+        <a class="btn btn-solid" href="aegis.html">Read the full volume</a>
+        <a class="btn btn-ghost" href="https://github.com/marsojuji-cmyk/aegis">v1.2.0 on GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ III. METHOD ============ -->
+<section class="chapter" id="method" style="background:url('assets/texture-method.jpg') center/cover, var(--ink);">
+  <div class="wrap">
+    <div class="chapter-head reveal">
+      <span class="chapter-no">Chapter III — Method</span>
+      <h2>Every claim carries <em>its status.</em></h2>
+      <p class="lede">The Ektar standard: the finest grain, no fog. Nothing on this site is louder than its evidence. Consequential claims are tiered at the point of writing — and the tiers are part of the design, not the fine print.</p>
+    </div>
+    <div class="tiers reveal">
+      <div class="tier verified">
+        <span class="t-name">Verified</span>
+        <span class="t-desc">An executed trace exists — a release tag, a green CI run, a published ledger entry. Cited, dated, checkable.</span>
+        <span class="t-mark">●</span>
+      </div>
+      <div class="tier inferred">
+        <span class="t-name">Inferred</span>
+        <span class="t-desc">Follows from verified material by a stated chain of reasoning. The chain is shown, not assumed.</span>
+        <span class="t-mark">◐</span>
+      </div>
+      <div class="tier guessed">
+        <span class="t-name">Guessed</span>
+        <span class="t-desc">A working hypothesis, labeled as one. Guesses are allowed; unlabeled guesses are not.</span>
+        <span class="t-mark">○</span>
+      </div>
+      <div class="tier unknown">
+        <span class="t-name">Unknown</span>
+        <span class="t-desc">Explicitly not known. An unmarked gap becomes a lie by the next reader — so the gaps are marked.</span>
+        <span class="t-mark">?</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ IV. THE RECORD ============ -->
+<section class="chapter" id="evidence">
+  <div class="wrap">
+    <div class="chapter-head reveal">
+      <span class="chapter-no">Chapter IV — The record</span>
+      <h2>Numbers with <em>receipts.</em></h2>
+      <p class="lede">Safe figures only — each one traceable to a repository, a release, or a ledger. The boundary below is load-bearing: it is what makes the numbers above believable.</p>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><div class="v">2 <small>releases</small></div><div class="l">Interlock v0.1.0 · AEGIS v1.2.0</div></div>
+      <div class="stat"><div class="v">27 <small>sites</small></div><div class="l">Reclamation pilot, Sentinel-2</div></div>
+      <div class="stat"><div class="v">21,892</div><div class="l">Provincial records surveyed</div></div>
+      <div class="stat"><div class="v">≥80<small>%</small></div><div class="l">AEGIS protective reserve floor</div></div>
+    </div>
+    <div class="caveat reveal">WHAT IS NOT CLAIMED — adoption, users, yield percentages, benchmark outcomes, or production readiness where a project is at design stage. The honest-yield pair is in progress; the reclamation dashboard is pending. No number here outruns its evidence.</div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ V. IMPRINT ============ -->
+<section class="chapter" id="imprint">
+  <div class="wrap">
+    <div class="imprint-grid">
+      <div class="reveal">
+        <span class="chapter-no">Chapter V — Imprint</span>
+        <h3>Memory Utility Labs</h3>
+        <p>The publishing imprint behind the work — Calgary, Alberta. Technical monographs, working systems, and the ledgers that keep them honest. <em>Introducing AEGIS</em>, Technical Specifications Vol. I, is its first volume.</p>
+        <p><a class="work-link" href="labs.html">About the imprint →</a></p>
+      </div>
+      <div class="reveal d1">
+        <span class="chapter-no">The instrument</span>
+        <h3>Ektar</h3>
+        <p>The working standard: provenance, uncertainty, time, decisions, and change — preserved as carefully as the work itself. The voice of these pages.</p>
+        <p><a class="work-link" href="ektar.html">About the standard →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ VI. CONTACT ============ -->
+<section class="chapter" id="contact">
+  <div class="wrap">
+    <div class="chapter-head reveal">
+      <span class="chapter-no">Chapter VI — Contact</span>
+      <h2>Start with <em>a receipt.</em></h2>
+      <p class="lede">For roles, collaborations, and serious inquiries about the work. Every message gets an answer; every claim in the reply carries its status.</p>
+    </div>
+    <a class="contact-big reveal" href="mailto:marcus@marcusrichards.dev">marcus@marcusrichards.dev</a>
+    <div class="hero-ctas reveal" style="margin-top:40px">
+      <a class="btn btn-ghost" href="https://github.com/marsojuji-cmyk">GitHub</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/marcus-richards-32075a422">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="f-col">
+        <h4>Portfolio</h4>
+        <a href="#work">Selected work</a>
+        <a href="#aegis">AEGIS</a>
+        <a href="#method">Method</a>
+        <a href="#evidence">The record</a>
+      </div>
+      <div class="f-col">
+        <h4>Volumes</h4>
+        <a href="aegis.html">AEGIS — Technical Specifications</a>
+        <a href="labs.html">Memory Utility Labs</a>
+        <a href="ektar.html">The Ektar Standard</a>
+      </div>
+      <div class="f-col">
+        <h4>Elsewhere</h4>
+        <a href="https://github.com/marsojuji-cmyk">GitHub</a>
+        <a href="https://www.linkedin.com/in/marcus-richards-32075a422">LinkedIn</a>
+        <a href="mailto:marcus@marcusrichards.dev">marcus@marcusrichards.dev</a>
+      </div>
+      <div class="f-col">
+        <h4>Standing</h4>
+        <div>Calgary, Alberta, Canada</div>
+        <div>Open to work — remote &amp; Calgary</div>
+      </div>
+    </div>
+    <div class="colophon">
+      <span>Golden Gate Book · Portfolio Vol. I</span>
+      <span>Set in Helvetica and Menlo · MMXXVI</span>
+      <span>© <span id="yr">2026</span> Marcus Richards</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav = document.getElementById('nav');
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 40); }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:.12, rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.reveal:not(.in)').forEach(function(el){ io.observe(el); });
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
