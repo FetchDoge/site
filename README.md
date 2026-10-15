@@ -16,7 +16,6 @@ Pages:
 | `aegis.html` | AEGIS — agent operating system for AI coding work |
 | `ektar.html` | Ektar — private continuity agent |
 | `labs.html` | lab notes / experiments |
-| `webdesign.html` | web design work |
 | `catalyst-grant-2026.html` | Catalyst grant 2026 application material |
 
 Shared stylesheet: `styles.css`. Static assets under `assets/`.
