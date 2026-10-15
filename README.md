@@ -30,4 +30,8 @@ https://marcusrichards.dev.
 Active. Edit HTML directly; keep the evidence-first voice: every claim on the
 page should be checkable.
 
+## License
+
+Copyright 2026 Marcus Richards. All rights reserved. The text, images and publications on this site may not be reused without permission. See [LICENSE](LICENSE).
+
 Built by Marcus Richards, directing AI coding agents.
