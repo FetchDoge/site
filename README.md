@@ -29,3 +29,5 @@ https://marcusrichards.dev.
 
 Active. Edit HTML directly; keep the evidence-first voice: every claim on the
 page should be checkable.
+
+Built by Marcus Richards, directing AI coding agents.
