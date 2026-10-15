@@ -14,7 +14,7 @@ Pages:
 |---|---|
 | `index.html` | home — positioning, doctrine, receipt-first intro |
 | `aegis.html` | AEGIS — agent operating system for AI coding work |
-| `ektar.html` | Ektar — private continuity agent |
+| `standard.html` | The Working Standard |
 | `labs.html` | lab notes / experiments |
 | `catalyst-grant-2026.html` | Catalyst grant 2026 application material |
 
