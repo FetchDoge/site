@@ -31,3 +31,7 @@ Active. Edit HTML directly; keep the evidence-first voice: every claim on the
 page should be checkable.
 
 Built by Marcus Richards, directing AI coding agents.
+
+## License
+
+Copyright (c) 2026 Marcus Richards. All rights reserved. See [LICENSE](LICENSE).
